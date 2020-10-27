@@ -31,16 +31,15 @@ def word_count(chosen_word):
     matched_word = 0
     for word in punc_removed_poem:
         if word == chosen_word:
-            print('I have a match!')
             matched_word += 1
-    return matched_word
+    return {chosen_word: matched_word}
     # take a list of words
     # cycle through it to count
     # a given word's frequency
     # store that value to be used later
 
 
-print(word_count('freedom'))
+print(word_count('her'))
 
 
 
